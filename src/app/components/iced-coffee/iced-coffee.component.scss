@@ -1,16 +1,3 @@
-// <div class="container">
-//     <div class="card" *ngFor="let c of coffees">
-//         <img [src]="c.image" (click)="toggleDetails(c.id)"/>
-//         <h3>{{c.title}}</h3>
-//         <div *ngIf="c.showDetails" class="details">
-//             <p>{{c.description}}</p>
-//             <ul>
-//                 <li *ngFor="let ing of c.ingredients">{{ing}}</li>
-//             </ul>
-//         </div>
-//     </div>
-// </div>
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -39,6 +26,3 @@
     height: 150px;
     object-fit: contain;
 }
-
-
-

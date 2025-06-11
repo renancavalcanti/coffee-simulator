@@ -1,1 +1,12 @@
-<p>hot-coffee works!</p>
+<div class="container">
+    <div class="card" *ngFor="let c of coffees">
+        <img [src]="c.image" (click)="toggleDetails(c.id)"/>
+        <h3>{{c.title}}</h3>
+        <div *ngIf="c.showDetails" class="details">
+            <p>{{c.description}}</p>
+            <ul>
+                <li *ngFor="let ing of c.ingredients">{{ing}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
