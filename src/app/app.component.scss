@@ -1,0 +1,27 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 100px;
+    align-content: space-evenly;
+}
+
+.navbar a{
+    position: relative;
+    z-index: 1001;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #333;
+}
+
+.navbar a.active{
+    font-weight: bold;
+}
+
+.content{
+    padding-top: 150px;
+}
